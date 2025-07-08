@@ -5,20 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kontak - Laundry Ajah</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-  <script>
-    (function(){
-      emailjs.init("azghotJjvMiH8TvdN"); // Ganti dengan Public Key EmailJS Anda
-    })();
-  </script>
 </head>
 <body>
-  <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background-color: #ADD8E6;">
-    <div class="logo">
-      <h1 style="margin: 0;">Laundry Ajah</h1>
-    </div>
+  <header>
+    <h1>Laundry Ajah</h1>
     <nav>
-      <ul style="display: flex; gap: 15px; list-style: none; margin: 0; padding: 0;">
+      <ul>
         <li><a href="index.html">Beranda</a></li>
         <li><a href="about.html">Tentang Kami</a></li>
         <li><a href="services.html">Layanan</a></li>
@@ -28,29 +20,31 @@
   </header>
 
   <section>
-    <h2>Hubungi Kami</h2>
-    <p><strong>Alamat:</strong> Jl. Setia Budi, Gang 2, Pontianak</p>
-    <p><strong>WhatsApp:</strong> <a href="https://wa.me/6282254561331" target="_blank">Chat via WhatsApp</a></p>
+  <h2>Hubungi Kami</h2>
+  <p><strong>Alamat:</strong> Jl. Setia Budi, Gang 2, Pontianak</p>
+  <p><strong>WhatsApp:</strong> <a href="https://wa.me/6282254561331" target="_blank">Chat via WhatsApp</a></p>
 
-    <div style="width:100%;height:300px;margin:20px 0;">
-      <iframe src="https://maps.app.goo.gl/HpnxvJbR2aKiNjgM9" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
+  <div style="width:100%;height:300px;margin:20px 0;">
+    <iframe src="https://maps.app.goo.gl/HpnxvJbR2aKiNjgM9" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
 
-    <h3>Kirim Keluhan atau Pertanyaan via Email</h3>
-    <p>Untuk keluhan, saran, atau pertanyaan lainnya, silakan kirim email langsung ke kami:</p>
-    <p>
-      <a href="mailto:laundryajah@gmail.com?subject=Keluhan%20atau%20Saran%20Laundry%20Ajah" class="email-button">
-        Kirim Email ke laundryajah@gmail.com
-      </a>
-    </p>
+  <h3>Kirim Keluhan atau Pertanyaan via Email</h3>
+  <p>Untuk keluhan, saran, atau pertanyaan lainnya, silakan kirim email langsung ke kami:</p>
+  <p>
+    <a href="mailto:laundryajah@gmail.com?subject=Keluhan%20atau%20Saran%20Laundry%20Bersih%20Cepat" class="email-button">
+      Kirim Email ke laundryajah@gmail.com
+    </a>
+  </p>
 
-    <h3>Konfirmasi Website Telah Direview Dosen</h3>
-    <p>Jika website ini sudah direview oleh dosen Anda, silakan klik tombol di bawah ini untuk mengirim konfirmasi email kepada kami.</p>
+  <h3>Konfirmasi Website Telah Direview Dosen</h3>
+  <p>Jika website ini sudah direview oleh dosen Anda, silakan klik tombol di bawah ini untuk mengirim konfirmasi email kepada kami.</p>
+  <button class="review-email-button" onclick="sendReviewEmail()">
+    Kirim Konfirmasi Review
+  </button>
+</section>
 
-    <button class="review-email-button" onclick="sendReviewEmail()">
-      Kirim Konfirmasi Review
-    </button>
-  </section>
+
+  
 
   <footer>
     <p>&copy; 2025 Laundry Ajah</p>
@@ -71,19 +65,13 @@
     function sendReviewEmail() {
       const confirmSend = confirm("Apakah Anda yakin ingin mengirim konfirmasi bahwa website telah direview oleh dosen?");
       if (confirmSend) {
-        emailjs.send("service_wu7d6y5", "template_kgrlwvd", {
-          to_name: "Laundry Ajah",
-          from_name: "Pengguna Website",
-          message: "Halo, website Laundry Ajah telah direview oleh dosen saya. Terima kasih."
-        })
-        .then(function(response) {
-          alert("Konfirmasi berhasil dikirim!");
-        }, function(error) {
-          alert("Terjadi kesalahan. Silakan coba lagi.");
-        });
+        window.location.href = "mailto:stevengiovani04@gmail.com?subject=Website%20Telah%20Direview%20Dosen&body=Halo,%20website%20Laundry%20Bersih%20Cepat%20telah%20direview%20oleh%20dosen%20saya.%20Terima%20kasih.";
       }
     }
   </script>
 
 </body>
+
 </html>
+
+
