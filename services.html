@@ -4,13 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Layanan - Laundry Ajah</title>
+
+  <!-- Favicon & Manifest -->
+  <link rel="icon" href="icons/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#00ADEF">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
     <h1>Laundry Ajah</h1>
     <nav>
-      <ul>
+      <ul class="nav-list">
         <li><a href="index.html">Beranda</a></li>
         <li><a href="about.html">Tentang Kami</a></li>
         <li><a href="services.html">Layanan</a></li>
@@ -19,76 +27,78 @@
     </nav>
   </header>
 
-  <section>
-  <h2>Layanan Kami</h2>
+  <section class="main-content">
+    <h2>Layanan Kami</h2>
 
-  <div class="services-container">
-    <div class="service-box">
-      <h3>Cuci Kering & Lipat</h3>
-      <p>Pakaian Anda dicuci bersih, dikeringkan, dan dilipat rapi. Cocok untuk kebutuhan sehari-hari agar hemat waktu dan tenaga.</p>
-      <ul>
-        <li>Hemat waktu, tinggal pakai</li>
-        <li>Lipat rapi seperti baru</li>
-        <li>Harga terjangkau</li>
-      </ul>
-    </div>
+    <div class="services-container">
 
-    <div class="service-box">
-      <h3>Cuci Setrika</h3>
-      <p>Layanan lengkap untuk Anda yang ingin pakaian bersih, wangi, dan bebas kusut. Siap langsung dipakai untuk acara formal atau kerja.</p>
-      <ul>
-        <li>Pakaian licin & wangi</li>
-        <li>Siap pakai tanpa repot setrika</li>
-        <li>Hasil rapi dan profesional</li>
-      </ul>
-    </div>
+      <div class="service-box">
+        <h3>Cuci Kering & Lipat</h3>
+        <p>Pakaian Anda dicuci bersih, dikeringkan, dan dilipat rapi.</p>
+        <ul>
+          <li>Hemat waktu, tinggal pakai</li>
+          <li>Lipat rapi seperti baru</li>
+          <li>Harga terjangkau</li>
+        </ul>
+      </div>
 
-    <div class="service-box">
-      <h3>Dry Cleaning</h3>
-      <p>Perawatan khusus untuk pakaian berbahan sensitif seperti jas, gaun, dan pakaian eksklusif agar tetap awet dan terjaga kualitasnya.</p>
-      <ul>
-        <li>Aman untuk bahan sensitif</li>
-        <li>Mencegah penyusutan & perubahan warna</li>
-        <li>Hasil maksimal seperti baru</li>
-      </ul>
-    </div>
+      <div class="service-box">
+        <h3>Cuci Setrika</h3>
+        <p>Layanan lengkap agar pakaian bersih, wangi, dan bebas kusut.</p>
+        <ul>
+          <li>Pakaian licin & wangi</li>
+          <li>Siap pakai tanpa setrika</li>
+          <li>Hasil rapi & profesional</li>
+        </ul>
+      </div>
 
-    <div class="service-box">
-      <h3>Laundry Sepatu</h3>
-      <p>Sepatu kotor? Serahkan kepada kami. Kami membersihkan sepatu Anda dengan metode khusus tanpa merusak bahan.</p>
-      <ul>
-        <li>Bersih menyeluruh hingga detail</li>
-        <li>Ramah untuk semua jenis bahan sepatu</li>
-        <li>Sepatu tampak seperti baru</li>
-      </ul>
-    </div>
+      <div class="service-box">
+        <h3>Dry Cleaning</h3>
+        <p>Perawatan untuk pakaian berbahan sensitif agar tetap awet.</p>
+        <ul>
+          <li>Aman untuk bahan sensitif</li>
+          <li>Mencegah perubahan warna</li>
+          <li>Hasil maksimal seperti baru</li>
+        </ul>
+      </div>
 
-    <div class="service-box">
-      <h3>Jemput-Antar Gratis</h3>
-      <p>Tidak perlu keluar rumah! Kami menyediakan layanan antar-jemput gratis agar Anda bisa tetap nyaman di rumah.</p>
-      <ul>
-        <li>Hemat waktu & tenaga</li>
-        <li>Bebas biaya tambahan</li>
-        <li>Pelayanan cepat & terpercaya</li>
-      </ul>
+      <div class="service-box">
+        <h3>Laundry Sepatu</h3>
+        <p>Kami bersihkan sepatu Anda dengan metode khusus & aman.</p>
+        <ul>
+          <li>Bersih hingga detail</li>
+          <li>Aman untuk semua bahan</li>
+          <li>Sepatu tampak seperti baru</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <h3>Jemput-Antar Gratis</h3>
+        <p>Tidak perlu keluar rumah—kami jemput dan antar tanpa biaya tambahan.</p>
+        <ul>
+          <li>Hemat waktu & tenaga</li>
+          <li>Bebas biaya tambahan</li>
+          <li>Pelayanan cepat & terpercaya</li>
+        </ul>
+      </div>
+
     </div>
-  </div>
-</section>
+  </section>
 
   <footer>
-  <p>&copy; 2025 Laundry Ajah</p>
-  <div class="social-media">
-    <a href="https://www.facebook.com/namaLaundryAnda" target="_blank" title="Facebook">
-      <img src="icons/facebook.svg" alt="Facebook" width="24">
-    </a>
-    <a href="https://www.instagram.com/namaLaundryAnda" target="_blank" title="Instagram">
-      <img src="icons/instagram.svg" alt="Instagram" width="24">
-    </a>
-    <a href="https://www.tiktok.com/@namaLaundryAnda" target="_blank" title="TikTok">
-      <img src="icons/tiktok.svg" alt="TikTok" width="24">
-    </a>
-  </div>
-</footer>
+    <p>&copy; 2025 Laundry Ajah</p>
+    <div class="social-media">
+      <a href="https://www.facebook.com/namaLaundryAnda" target="_blank" title="Facebook">
+        <img src="icons/facebook.svg" alt="Facebook" width="24">
+      </a>
+      <a href="https://www.instagram.com/namaLaundryAnda" target="_blank" title="Instagram">
+        <img src="icons/instagram.svg" alt="Instagram" width="24">
+      </a>
+      <a href="https://www.tiktok.com/@namaLaundryAnda" target="_blank" title="TikTok">
+        <img src="icons/tiktok.svg" alt="TikTok" width="24">
+      </a>
+    </div>
+  </footer>
 
 </body>
 </html>

@@ -4,13 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kontak - Laundry Ajah</title>
+
+  <!-- Favicon dan Icon Android -->
+  <link rel="icon" href="icons/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#00ADEF">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
     <h1>Laundry Ajah</h1>
     <nav>
-      <ul>
+      <ul class="nav-list">
         <li><a href="index.html">Beranda</a></li>
         <li><a href="about.html">Tentang Kami</a></li>
         <li><a href="services.html">Layanan</a></li>
@@ -19,53 +27,47 @@
     </nav>
   </header>
 
-  <section>
-  <h2>Hubungi Kami</h2>
+  <section class="main-content">
+    <h2>Hubungi Kami</h2>
   
-  <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
-    
-    <!-- Kontainer Peta -->
-    <div style="flex: 1 1 300px; min-width: 300px;">
-      <h3>Alamat & Lokasi</h3>
-      <p><strong>Alamat:</strong> Jl. Setia Budi, Gang 2, Pontianak</p>
-      <p><strong>WhatsApp:</strong> <a href="https://wa.me/6282254561331" target="_blank">Chat via WhatsApp</a></p>
-      <div style="width: 100%; height: 300px; margin-top: 10px;">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8176944212705!2d109.3445806!3d-0.0320938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d584db93d8f25%3A0x183bcdbbe17b09b3!2sGg.%20Setia%20Budi%202%20No.4B%2C%20Benua%20Melayu%20Darat%2C%20Kec.%20Pontianak%20Sel.%2C%20Kota%20Pontianak%2C%20Kalimantan%20Barat%2078122!5e0!3m2!1sid!2sid!4v1751995475756!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="container-flex">
+      
+      <!-- Peta -->
+      <div class="content-box">
+        <h3>Alamat & Lokasi</h3>
+        <p><strong>Alamat:</strong> Jl. Setia Budi, Gang 2, Pontianak</p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/6282254561331" target="_blank">Chat via WhatsApp</a></p>
+        <div class="map-box">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8176944212705!2d109.3445806!3d-0.0320938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d584db93d8f25%3A0x183bcdbbe17b09b3!2sGg.%20Setia%20Budi%202%20No.4B%2C%20Pontianak%2C%20Kalimantan%20Barat!5e0!3m2!1sid!2sid!4v1751995475756!5m2!1sid!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
-    </div>
-    
-    <!-- Kontainer Keluhan -->
-    <div style="flex: 1 1 300px; min-width: 300px;">
-      <h3>Kirim Keluhan atau Pertanyaan</h3>
-      <p>Silakan kirim keluhan, saran, atau pertanyaan ke email kami:</p>
-      <p>
-        <a href="mailto:laundryajah@gmail.com?subject=Keluhan%20atau%20Saran%20Laundry%20Bersih%20Cepat" class="email-button">
-          Kirim Email ke laundryajah@gmail.com
-        </a>
-      </p>
 
-      <h3>Konfirmasi Website Telah Direview</h3>
-      <p>Jika website ini sudah direview oleh dosen, klik tombol di bawah ini:</p>
-      <button class="review-email-button" onclick="sendReviewEmail()">
-        Kirim Konfirmasi Review
-      </button>
-    </div>
+      <!-- Keluhan -->
+      <div class="content-box">
+        <h3>Kirim Keluhan atau Pertanyaan</h3>
+        <p>Silakan kirim keluhan, saran, atau pertanyaan ke email kami:</p>
+        <p>
+          <a href="mailto:laundryajah@gmail.com?subject=Keluhan%20atau%20Saran%20Laundry%20Bersih%20Cepat" class="email-button">
+            Kirim Email ke laundryajah@gmail.com
+          </a>
+        </p>
 
-  </div>
-</section>  
+        <h3>Konfirmasi Website Telah Direview</h3>
+        <p>Jika website ini sudah direview oleh dosen, klik tombol di bawah ini:</p>
+        <button class="review-email-button" onclick="sendReviewEmail()">
+          Kirim Konfirmasi Review
+        </button>
+      </div>
+
+    </div>
+  </section>
 
   <footer>
     <p>&copy; 2025 Laundry Ajah</p>
     <div class="social-media">
-      <a href="https://www.facebook.com/namaLaundryAnda" target="_blank" title="Facebook">
-        <img src="icons/facebook.svg" alt="Facebook" width="24">
-      </a>
-      <a href="https://www.instagram.com/namaLaundryAnda" target="_blank" title="Instagram">
-        <img src="icons/instagram.svg" alt="Instagram" width="24">
-      </a>
-      <a href="https://www.tiktok.com/@namaLaundryAnda" target="_blank" title="TikTok">
-        <img src="icons/tiktok.svg" alt="TikTok" width="24">
-      </a>
+      <a href="https://www.facebook.com/namaLaundryAnda" target="_blank" title="Facebook"><img src="icons/facebook.svg" alt="Facebook" width="24"></a>
+      <a href="https://www.instagram.com/namaLaundryAnda" target="_blank" title="Instagram"><img src="icons/instagram.svg" alt="Instagram" width="24"></a>
+      <a href="https://www.tiktok.com/@namaLaundryAnda" target="_blank" title="TikTok"><img src="icons/tiktok.svg" alt="TikTok" width="24"></a>
     </div>
   </footer>
 
@@ -79,5 +81,4 @@
   </script>
 
 </body>
-
 </html>
